@@ -1,0 +1,36 @@
+.MoonImage {
+    width: 50%;
+    max-width: 600px;
+}
+
+.MoonSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    width: 96vw;
+    padding: 2vw;
+    margin-top: 10vh;
+}
+
+.MoonPara {
+    background: #333333;
+    color: white;
+    padding: 3em;
+    border-radius: 3em;
+}
+
+@media screen and (max-width: 700px) {
+    .MoonSectionWrapper {
+        flex-direction: column-reverse;
+        order: revert;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MoonPara {
+        padding: 2em;
+        width: 60vw;
+    }
+}

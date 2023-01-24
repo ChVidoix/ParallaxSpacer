@@ -1,0 +1,96 @@
+.Header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: #333;
+    display: flex;
+    height: 4em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px
+}
+
+.Logo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 32px;
+    margin-left: 32px;
+    height: 3rem;
+}
+
+.NavBar {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    margin-right: 64px;
+    gap: 8px
+}
+
+.NavBar span {
+    padding: 0 24px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2rem;
+    background: none;
+    border-radius: 1.5rem;
+    height: 2rem;
+    transition: background 0.3s ease-in-out;
+    border: solid white 4px;
+}
+
+.NavBar span:hover {
+    background: #999;
+    cursor: pointer;
+}
+
+.Logo:hover {
+    cursor: pointer;
+}
+
+.NavBar div:hover {
+    cursor: pointer;
+}
+
+.VerticalNavBar {
+    position: absolute;
+    top: 4em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: #444;
+}
+
+.VerticalNavBar span {
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .NavBar {
+        margin-right: 2em;
+        justify-content: flex-end;
+    }
+
+    .NavBar span {
+        display: none;
+    }
+
+    .NavBar div {
+        display: block !important;
+    }
+
+    .VerticalNavBar {
+        position: absolute;
+    }
+
+    .VerticalNavBar div {
+        position: absolute;
+        top: -1.5em;
+        right: 1em;
+    }
+}

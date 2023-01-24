@@ -1,0 +1,46 @@
+.MainHeader {
+    font-size: 10em;
+    color: white;
+    padding-top: 48px;
+}
+
+.IntroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.IntroPara {
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 3em;
+    border-radius: 3em;
+    width: 70vw;
+}
+
+.StarsImage {
+    width: 100%;
+    min-width: 1300px;
+}
+
+@media screen and (max-width: 700px) {
+    .MainHeader {
+        font-size: 7em;
+    }
+
+    .IntroPara {
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MainHeader {
+        font-size: 5em;
+    }
+
+    .IntroPara {
+        padding: 1em;
+    }
+}

@@ -29,7 +29,7 @@ function App() {
           setActive("Intro");
         } else if (ref.current.current >= 100 && ref.current.current < 700) {
           setActive("Moon");
-        } else if (ref.current.current >= 700 && ref.current.current < 1600) {
+        } else if (ref.current.current >= 700 && ref.current.current < 1700) {
           setActive("Mars");
         } else {
           setActive("Sun");
